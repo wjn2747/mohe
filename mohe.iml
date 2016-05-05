@@ -14,12 +14,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="libs" level="project" />
-    <orderEntry type="module" module-name="main" exported="" />
-    <orderEntry type="library" name="libammsdk" level="project" />
-    <orderEntry type="library" name="alipaySingle-20160111" level="project" />
-    <orderEntry type="library" name="libpingpp-2.0.7" level="project" />
-    <orderEntry type="library" name="UPPayAssistEx" level="project" />
-    <orderEntry type="library" name="umeng-update-v2.6.0.1" level="project" />
     <orderEntry type="module" module-name="app_sdk" exported="" />
+    <orderEntry type="module" module-name="main" exported="" />
   </component>
 </module>
