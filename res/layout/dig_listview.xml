@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:gravity="center"
+              android:layout_height="fill_parent">
+        <LinearLayout     android:background="@drawable/border"    android:layout_width="320dp" android:layout_height="300dp" android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="请选择魔盒"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            <View android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/app_color"></View>
+            <ListView
+                    android:fadingEdge="none"
+                    android:background="@color/trans"
+                    android:cacheColorHint="#00000000"
+                    android:minHeight="?android:attr/listPreferredItemHeight" android:listSelector="@android:color/transparent" android:layout_width="fill_parent" android:id="@+id/listviw"  android:scrollbars="none" android:divider="@color/line" android:dividerHeight="0.5dp"  android:layout_height="fill_parent">
+            </ListView>
+
+        </LinearLayout>
+</LinearLayout>

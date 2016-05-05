@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:mohe="http://schemas.android.com/apk/res/com.duolaguanjia"
+              android:orientation="vertical"
+              android:background="@color/whitesmoke"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.duolaguanjia.view.WidgetInputItem
+            mohe:right_txt="assdsdsd"
+            mohe:left_txt="当前绑定的魔盒"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height" android:id="@+id/bind_mohe">
+    </com.duolaguanjia.view.WidgetInputItem>
+    <com.duolaguanjia.view.WidgetInputItem
+            mohe:right_txt="家"
+            mohe:left_txt="当前场景"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height" android:id="@+id/wi_style">
+    </com.duolaguanjia.view.WidgetInputItem>
+
+    <RelativeLayout android:layout_marginTop="10dp" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:background="@color/white"
+                    android:id="@+id/rl_add">
+<TextView android:layout_centerInParent="true" android:layout_width="wrap_content" android:textSize="40sp" android:layout_height="wrap_content" android:textColor="@color/black" android:text="+"/>
+
+    </RelativeLayout>
+</LinearLayout>

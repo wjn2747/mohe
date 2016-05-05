@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:mohe="http://schemas.android.com/apk/res/com.duolaguanjia"
+              android:orientation="vertical"
+              android:background="@color/whitesmoke"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<include layout="@layout/view_title"></include>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+
+        <LinearLayout   android:paddingLeft="10dp" android:paddingRight="10dp" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="40dp" android:orientation="horizontal">
+
+            <TextView android:id="@+id/tv_order_name" android:textSize="16sp" android:layout_alignTop="@id/imageView1" android:textColor="@color/black"
+                      android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tv_time"   android:textSize="12sp" android:layout_marginLeft="5dp"   android:textColor="@color/hint"  android:text="2015-09-09  12:00"  android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="1dp" android:background="@color/line_color"></View>
+        <ListView  android:divider="@color/line_color" android:dividerHeight="0.5dp" android:id="@+id/ll_child_lv" android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+
+        </ListView>
+        <View  android:id="@+id/view_line" android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+        <com.duolaguanjia.view.WidgetInputItem
+                mohe:right_txt="2015091442233518"
+                mohe:left_txt="订单号"
+                android:paddingLeft="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_height" android:id="@+id/wi_order_no">
+        </com.duolaguanjia.view.WidgetInputItem>
+        <com.duolaguanjia.view.WidgetInputItem
+                mohe:right_txt="2杯"
+                mohe:left_txt="数量"
+                android:paddingLeft="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_height" android:id="@+id/wi_number">
+        </com.duolaguanjia.view.WidgetInputItem>
+        <com.duolaguanjia.view.WidgetInputItem
+                mohe:right_txt="50元"
+                mohe:left_txt="总金额"
+                android:paddingLeft="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_height" android:id="@+id/wi_all_money">
+        </com.duolaguanjia.view.WidgetInputItem>
+        <com.duolaguanjia.view.WidgetInputItem
+                mohe:right_txt="待发货"
+                android:id="@+id/wi_static"
+                mohe:left_txt="订单状态"
+                android:paddingLeft="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_height">
+        </com.duolaguanjia.view.WidgetInputItem>
+        <TextView android:visibility="gone" android:layout_marginRight="10dp" android:layout_width="fill_parent"  android:layout_height="25dp" android:textColor="@color/app_color" android:text="退款详情>>" android:id="@+id/tv_tuikuang_descript" android:textSize="12sp" android:gravity="right|center_vertical"/>
+        <Button android:id="@+id/bt_ok" android:visibility="gone" android:layout_marginTop="20dp" android:textSize="18sp" android:text="付款" android:textColor="@color/white" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:background="@drawable/button_style" android:layout_width="fill_parent" android:layout_height="40dp"/>
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_width="fill_parent" android:layout_height="40dp" android:layout_marginTop="20dp"
+                      android:id="@+id/ll_daishouhuo">
+            <Button android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:id="@+id/bt_shenqing" android:textSize="18sp" android:text="申请退款" android:textColor="@color/white" android:background="@drawable/button_style" android:layout_width="0dp" android:layout_weight="1" android:layout_height="40dp"/>
+            <Button android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:id="@+id/bt_queren" android:textSize="18sp" android:text="确认收货" android:textColor="@color/white" android:background="@drawable/button_style" android:layout_width="0dp" android:layout_weight="1" android:layout_height="40dp"/>
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

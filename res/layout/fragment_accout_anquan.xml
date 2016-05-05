@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:yingmei="http://schemas.android.com/apk/res/com.duolaguanjia"
+              android:orientation="vertical"
+              android:background="@color/whitesmoke"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/view_title"></include>
+    <com.duolaguanjia.view.WidgetMenuItem android:layout_width="fill_parent"
+                                          yingmei:textcolor="#333333"
+                                          android:layout_marginTop="10dp"
+                                          yingmei:menu_title="设置支付密码" android:id="@+id/wm_setting_pws"
+                                          android:layout_height="@dimen/item_height" ></com.duolaguanjia.view.WidgetMenuItem>
+    <com.duolaguanjia.view.WidgetMenuItem android:layout_width="fill_parent"
+                                          yingmei:textcolor="#333333"
+                                          android:layout_marginTop="10dp"
+                                          android:visibility="gone"
+                                          yingmei:menu_title="重置支付密码" android:id="@+id/wm_config_pws"
+                                          android:layout_height="@dimen/item_height" ></com.duolaguanjia.view.WidgetMenuItem>
+    <com.duolaguanjia.view.WidgetMenuItem android:layout_width="fill_parent"
+                                          yingmei:textcolor="#333333"
+                                          android:visibility="gone"
+                                          android:layout_marginTop="10dp"
+                                          yingmei:menu_title="账户安全险" android:id="@+id/wm_account_anquan"
+                                          android:layout_height="@dimen/item_height" ></com.duolaguanjia.view.WidgetMenuItem>
+
+
+</LinearLayout>

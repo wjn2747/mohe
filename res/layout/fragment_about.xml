@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/whitesmoke"
+              xmlns:yingmei="http://schemas.android.com/apk/res/com.duolaguanjia"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/view_title"></include>
+    <View  android:layout_width="fill_parent"  android:layout_marginTop="10dp" android:layout_height="0.1dp" android:background="@color/line"></View>
+    <com.duolaguanjia.view.WidgetMenuItem android:id="@+id/wm_account_name" yingmei:textcolor="#333333"
+                                          yingmei:checkable="true"
+                                          yingmei:menu_title="版本说明" android:layout_width="fill_parent"
+                                          android:layout_height="@dimen/item_height" android:orientation="vertical"></com.duolaguanjia.view.WidgetMenuItem>
+    <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+    <com.duolaguanjia.view.WidgetMenuItem android:layout_marginTop="10dp" yingmei:textcolor="#333333"
+
+                                          yingmei:menu_title="反馈" android:layout_width="fill_parent"
+                                          android:layout_height="@dimen/item_height" android:id="@+id/wm_accont"
+                                          android:orientation="vertical"></com.duolaguanjia.view.WidgetMenuItem>
+    <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+    <com.duolaguanjia.view.WidgetMenuItem android:layout_marginTop="10dp" yingmei:textcolor="#333333"
+
+                                          yingmei:menu_title="关于我们" android:layout_width="fill_parent"
+                                          android:layout_height="@dimen/item_height" android:id="@+id/wm_sex"
+                                          android:orientation="vertical"></com.duolaguanjia.view.WidgetMenuItem>
+    <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+    <Button android:layout_marginTop="20dp" android:textSize="18sp" android:text="退出" android:textColor="@color/white" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:background="@drawable/button_style" android:layout_width="fill_parent" android:layout_height="40dp"
+            android:id="@+id/bt_save"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">朵拉管家</string>
+    <string name="action_settings">Settings</string>
+    <string name="addressedit_toast_choose_province">请先选择省份</string>
+    <string name="addressedit_toast_choos">请先选择城市</string>
+    <string name="addressedit_dialog_xingzuo">星座</string>
+    <string name="addressedit_dialog_province">省份</string>
+    <string name="addressedit_dialog_city">城市</string>
+    <string name="addressedit_dialog_area">区/县</string>
+    <string name="address_add">新增</string>
+    <string name="address_edit">编辑</string>
+    <string name="address_delete">删除</string>
+    <string name="address_default">默认地址</string>
+    <string name="address_undefault">设置为默认地址</string>
+    <!-- 条码扫描 -->
+    <string name="scan_text">请将魔盒ID放入框内, 即可自动扫描</string>
+</resources>

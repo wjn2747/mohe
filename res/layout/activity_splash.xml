@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duolaguanjia.view.LinearLayoutAutoHintInputMethod xmlns:android="http://schemas.android.com/apk/res/android"
+                                                       android:orientation="vertical"
+                                                       android:layout_width="match_parent"
+                                                       android:layout_height="match_parent">
+    <!-- 初始化页面 -->
+
+    <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:background="@drawable/splash" />
+
+        <com.duolaguanjia.view.WidgetHttpLoadView
+                android:id="@+id/httpview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+    </RelativeLayout>
+    <!-- 引导页面 -->
+    <RelativeLayout
+            android:id="@+id/navigation"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#000000"
+            android:visibility="gone" >
+
+        <com.duolaguanjia.view.MyScrollLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/ScrollLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="visible" >
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/navigation1" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/navigation2" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/navigation3" >
+
+                <Button
+                        android:id="@+id/startBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="100dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:background="@drawable/navigation_bt"
+                        android:onClick="startmain"
+                        android:text="立即体验"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                />
+            </RelativeLayout>
+        </com.duolaguanjia.view.MyScrollLayout>
+
+        <LinearLayout
+                android:id="@+id/llayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="24.0dip"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:padding="5.0dip"
+                    android:src="@drawable/page_indicator_bg" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:padding="5.0dip"
+                    android:src="@drawable/page_indicator_bg" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:padding="5.0dip"
+                    android:src="@drawable/page_indicator_bg" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</com.duolaguanjia.view.LinearLayoutAutoHintInputMethod>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/griditems_bg" >
+
+    <RelativeLayout
+            android:id="@+id/rl_border"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+            android:gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_gv"
+        >
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5.0dip"
+            android:maxLines="1"
+            android:textColor="@color/commo_text_color"
+            android:textSize="14.0sp" />
+        <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_item"
+                android:layout_centerHorizontal="true"
+                android:text="即将开通"
+                android:visibility="gone"
+                android:textColor="@color/hint"
+                android:textSize="12.0sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

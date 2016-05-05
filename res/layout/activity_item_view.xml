@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/whitesmoke"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/view_title"></include>
+    <ListView android:layout_marginTop="10dp" android:layout_marginLeft="10dp" android:minHeight="?android:attr/listPreferredItemHeight" android:listSelector="@android:color/transparent" android:layout_width="fill_parent" android:id="@+id/listviw"  android:scrollbars="none" android:divider="@null" android:dividerHeight="0dp" android:layout_height="wrap_content">
+
+
+    </ListView>
+
+
+
+</LinearLayout>

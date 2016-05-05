@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duolaguanjia.view.LinearLayoutAutoHintInputMethod xmlns:android="http://schemas.android.com/apk/res/android"
+                                                       xmlns:mohe="http://schemas.android.com/apk/res/com.duolaguanjia"
+                                                       android:orientation="vertical"
+                                                       android:background="@color/whitesmoke"
+                                                       android:layout_width="match_parent"
+                                                       android:layout_height="match_parent">
+    <com.duolaguanjia.view.WidgetInputItem
+            mohe:input_hile="请输入手机所连接的wifi账号"
+            mohe:left_txt="wifi账号"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="10dp" android:orientation="vertical" android:id="@+id/wi_accout">
+    </com.duolaguanjia.view.WidgetInputItem>
+    <com.duolaguanjia.view.WidgetInputItem
+            mohe:input_hile="请输入wifi密码"
+            mohe:left_txt="wifi密码"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height"
+            android:orientation="vertical" android:id="@+id/wi_pws">
+
+
+    </com.duolaguanjia.view.WidgetInputItem>
+    <Button android:layout_marginTop="20dp" android:enabled="false" android:textSize="18sp" android:text="下一步" android:textColor="@color/white" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:background="@drawable/btn_register_bg" android:layout_width="fill_parent" android:layout_height="40dp"
+            android:id="@+id/bt_next"/>
+</com.duolaguanjia.view.LinearLayoutAutoHintInputMethod>

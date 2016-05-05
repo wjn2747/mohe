@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+               android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+  <ImageView android:layout_marginTop="30dp" android:layout_marginBottom="10dp" android:layout_centerVertical="true" android:id="@+id/iv_icon" android:layout_marginLeft="10dp" android:src="@drawable/mohe" android:layout_width="40dp" android:layout_height="40dp"/>
+
+  <LinearLayout android:layout_marginLeft="10dp" android:layout_centerVertical="true" android:layout_toRightOf="@id/iv_icon" android:layout_width="fill_parent" android:layout_height="50dp" android:orientation="vertical">
+    <LinearLayout android:layout_marginBottom="5dp" android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+   <TextView android:gravity="center_vertical" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textColor="@color/black" android:textSize="15sp" android:text="当前魔盒ID"
+            />
+  <TextView android:gravity="center_vertical" android:layout_marginRight="10dp" android:text="123" android:layout_width="wrap_content" android:layout_height="20dp" android:textSize="14sp" android:textColor="@color/hint"
+            android:id="@+id/tv_id"/>
+    </LinearLayout>
+    <View android:layout_marginRight="10dp" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+    <LinearLayout android:layout_marginTop="5dp" android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+      <TextView android:gravity="center_vertical" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textColor="@color/black" android:textSize="15sp" android:text="当前场景"
+                />
+      <TextView android:gravity="center_vertical" android:layout_marginRight="10dp" android:text="123" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="@color/hint"
+                android:id="@+id/tv_changjing"/>
+    </LinearLayout>
+  </LinearLayout>
+
+</RelativeLayout>

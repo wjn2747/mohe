@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="30dp" android:orientation="vertical"
+                android:id="@+id/rl_title_descipt">
+    <View android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+<TextView android:layout_marginLeft="10dp" android:textSize="14sp" android:textColor="@color/black" android:layout_centerVertical="true" android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户评论"/>
+    <TextView android:layout_centerVertical="true" android:textSize="12sp" android:textColor="@color/black" android:id="@+id/tv_num" android:layout_toRightOf="@id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(50)"/>
+    <View android:layout_width="fill_parent"  android:layout_alignParentBottom="true" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+</RelativeLayout>
+    <!--评论主题-->
+    <LinearLayout android:layout_marginBottom="10dp" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+       <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+           <FrameLayout
+                   android:id="@+id/imageView1"
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_margin="10dp"
+           >
+               <ImageView
+                       android:id="@+id/user_item_iv_avatar"
+                       android:layout_width="fill_parent"
+                       android:layout_height="fill_parent"
+                       android:background="@drawable/bill_item_bg"
+                       android:scaleType="fitXY"/>
+
+               <ImageView
+                       android:layout_width="fill_parent"
+                       android:layout_height="fill_parent"
+                       android:background="@drawable/round"
+                       android:duplicateParentState="true"
+                       android:scaleType="fitXY" />
+           </FrameLayout>
+           <TextView android:layout_weight="1" android:layout_marginLeft="-5dp" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:textColor="@color/black" android:textSize="12sp" android:text="不会盘白的好"/>
+  <TextView android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:textSize="11sp" android:text="2015-12-85" android:layout_gravity="bottom"/>
+       </LinearLayout>
+        <TextView android:layout_marginRight="10dp" android:maxLines="3"  android:layout_marginLeft="10dp" android:text="texttexttexttexttext" android:textSize="11sp" android:id="@+id/tv_descript" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

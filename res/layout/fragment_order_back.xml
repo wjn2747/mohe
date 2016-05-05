@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duolaguanjia.view.LinearLayoutAutoHintInputMethod xmlns:android="http://schemas.android.com/apk/res/android"
+                                                       xmlns:mohe="http://schemas.android.com/apk/res/com.duolaguanjia"
+                                                       android:orientation="vertical"
+                                                       android:background="@color/whitesmoke"
+                                                       android:layout_width="match_parent"
+                                                       android:layout_height="match_parent">
+    <include layout="@layout/view_title"></include>
+    <RelativeLayout
+            android:id="@+id/rl_back"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height">
+        <TextView android:id="@+id/tv_input_name" android:text="退款原因" android:layout_centerVertical="true" android:textSize="16sp" android:layout_marginLeft="10dp"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black"/>
+        <TextView android:tag="0" android:gravity="center_vertical" android:hint="请选择退款原因" android:textCursorDrawable="@drawable/color_cursor" android:id="@+id/tv_tuikuang" android:textSize="15sp" android:layout_centerVertical="true" android:layout_marginLeft="100dp" android:textColor="@color/hint" android:background="@null" android:layout_width="200dp" android:layout_height="40dp" />
+        <View  android:id="@+id/view_line" android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+    </RelativeLayout>
+   <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+
+           <TextView  android:text="退款金额" android:layout_centerVertical="true" android:textSize="16sp" android:layout_marginLeft="10dp"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black"/>
+           <EditText android:inputType="numberDecimal" android:hint="请输入退款金额" android:textCursorDrawable="@drawable/color_cursor"  android:id="@+id/et_input_content" android:textSize="15sp"  android:layout_centerVertical="true" android:layout_marginLeft="25dp"  android:textColor="@color/hint" android:background="@null" android:layout_width="0dp" android:layout_weight="1" android:layout_height="40dp" />
+
+       <TextView android:gravity="center_vertical" android:layout_marginRight="10dp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="30dp" android:textSize="12sp" android:textColor="@color/black"
+                 android:id="@+id/tv_max" android:text="最多可图库33yu"/>
+   </LinearLayout>
+
+    <EditText android:gravity="top" android:layout_width="fill_parent"  android:hint="您也可以在此输入退款原因" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:layout_height="100dp" android:id="@+id/et_input" android:textColor="@color/black" android:background="@drawable/border_solid"/>
+    <LinearLayout android:layout_margin="10dp"  android:id="@+id/ll_auto_style" android:orientation="horizontal"  android:layout_width="fill_parent" android:layout_height="110dp">
+
+
+    </LinearLayout>
+    <Button  android:textSize="16sp" android:text="确定" android:textColor="@color/white" android:layout_margin="20dp" android:background="@drawable/button_style" android:layout_width="fill_parent" android:layout_height="40dp"
+             android:id="@+id/bt_next"/>
+</com.duolaguanjia.view.LinearLayoutAutoHintInputMethod>

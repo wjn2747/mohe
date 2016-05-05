@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/whitesmoke"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout  android:id="@+id/ll_other"  android:gravity="center_vertical" android:background="@color/title_bg" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40dp">
+        <TextView  android:layout_marginLeft="10dp" android:layout_width="0dp" android:layout_weight="1" android:text="订阅" android:layout_alignParentRight="true"  android:layout_marginRight="10dp" android:layout_centerVertical="true" android:textSize="18dp" android:layout_height="wrap_content"   android:textColor="@color/white"
+                  android:id="@+id/tv_title_name"/>
+        <Button  android:text="已订阅" android:padding="5dp" android:layout_width="wrap_content"   android:layout_marginRight="5dp" android:layout_centerVertical="true" android:textSize="16dp" android:layout_height="wrap_content"   android:textColor="@color/white"  android:background="@null"
+                android:id="@+id/tv_right_button"/>
+    </LinearLayout>
+    <include layout="@layout/view_xlistview"></include>
+</LinearLayout>

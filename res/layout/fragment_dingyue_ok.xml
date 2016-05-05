@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/whitesmoke"
+              android:layout_height="match_parent">
+    <include layout="@layout/view_title"></include>
+  <RelativeLayout android:layout_width="fill_parent" android:background="@color/main_top_color" android:layout_height="wrap_content">
+    <ImageView android:layout_width="wrap_content" android:layout_centerInParent="true" android:scaleType="matrix" android:layout_height="wrap_content" android:src="@drawable/background"/>
+      <FrameLayout
+              android:id="@+id/imageView1"
+              android:layout_width="75dp"
+              android:layout_height="75dp"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="20dp"
+      >
+          <ImageView
+                  android:id="@+id/user_item_iv_avatar"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:background="@drawable/user_face"
+                  android:scaleType="fitXY"/>
+
+          <ImageView
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:background="@drawable/round_blue"
+                  android:duplicateParentState="true"
+                  android:scaleType="fitXY" />
+      </FrameLayout>
+      <TextView android:layout_margin="10dp" android:textSize="18sp" android:textColor="@color/white" android:layout_centerHorizontal="true"  android:layout_below="@id/imageView1" android:id="@+id/tv_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="闹钟"/>
+  </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@color/white"
+                    android:id="@+id/rl_add">
+        <TextView android:layout_centerInParent="true" android:gravity="center"  android:layout_width="wrap_content" android:textSize="40sp" android:layout_height="wrap_content" android:textColor="@color/black" android:text="+"
+                 />
+    </RelativeLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1dp" android:background="@color/line_color"></View>
+    <ListView
+            android:fadingEdge="none"
+            android:cacheColorHint="#00000000"
+            android:minHeight="?android:attr/listPreferredItemHeight" android:listSelector="@android:color/transparent" android:layout_width="fill_parent" android:id="@+id/listviw"  android:scrollbars="none" android:divider="@color/line" android:dividerHeight="0.5dp"  android:layout_height="0dp" android:layout_weight="1">
+    </ListView>
+    <RelativeLayout android:visibility="gone" android:id="@+id/ll_open_colse" android:layout_width="fill_parent" android:layout_height="50dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black" android:layout_marginLeft="10dp" android:textSize="16sp" android:layout_centerVertical="true" android:text="睡前故事"/>
+        <Button  android:id="@+id/bt_open"  android:layout_alignParentRight="true" android:layout_marginRight="10dp" android:layout_centerVertical="true" android:layout_width="70dp" android:layout_height="25dp" android:background="@drawable/sel_open"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duolaguanjia.view.LinearLayoutAutoHintInputMethod xmlns:android="http://schemas.android.com/apk/res/android"
+                                                       android:orientation="vertical"
+                                                       android:background="@color/white"
+                                                       android:layout_width="match_parent"
+                                                       android:layout_height="match_parent">
+     <ImageView android:layout_gravity="center_horizontal" android:src="@drawable/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="125dp"/>
+  <RelativeLayout  android:layout_marginRight="20dp" android:layout_marginLeft="20dp"  android:layout_marginTop="30dp" android:layout_width="fill_parent" android:layout_height="@dimen/item_height">
+<ImageView  android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone"/>
+     <com.duolaguanjia.view.EditTextWithDel android:textCursorDrawable="@drawable/color_cursor" android:textSize="14sp" android:inputType="number" android:textColor="@color/black" android:background="@null" android:layout_marginLeft="30dp" android:layout_centerVertical="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                                            android:id="@+id/et_longname"></com.duolaguanjia.view.EditTextWithDel>
+      <View android:layout_alignParentBottom="true"  android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+  </RelativeLayout>
+    <RelativeLayout  android:layout_marginLeft="20dp" android:layout_marginRight="20dp"  android:layout_width="fill_parent" android:layout_height="@dimen/item_height">
+        <ImageView  android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pws"/>
+        <EditText android:textCursorDrawable="@drawable/color_cursor" android:textSize="14sp" android:background="@null" android:textColor="@color/black"   android:maxLength="6" android:inputType="number" android:layout_marginLeft="30dp" android:layout_centerVertical="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                                       android:id="@+id/et_pws"></EditText>
+        <View android:layout_alignParentBottom="true"  android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+        <Button android:background="@null" android:layout_centerVertical="true"  android:textColor="#c1c1c1" android:textSize="14sp" android:layout_alignParentRight="true" android:id="@+id/bt_send_code" android:layout_marginRight="10dp" android:layout_width="120dp" android:gravity="center" android:padding="0dp"  android:text="发送验证码" android:layout_height="30dp"/>
+        <View  android:layout_toLeftOf="@id/bt_send_code"  android:layout_width="0.5dp" android:layout_height="30dp" android:layout_centerVertical="true" android:background="@color/line_color"></View>
+    </RelativeLayout>
+        <Button android:layout_marginTop="20dp" android:enabled="false" android:textSize="18sp" android:text="登录" android:textColor="@color/white" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:background="@drawable/btn_register_bg" android:layout_width="fill_parent" android:layout_height="40dp"
+            android:id="@+id/bt_next"/>
+    <TextView android:layout_marginRight="10dp" android:layout_width="fill_parent" android:layout_height="25dp" android:textColor="@color/app_color" android:layout_marginTop="10dp" android:text="朵拉用户协议" android:id="@+id/tv_tuikuang_descript" android:textSize="12sp" android:gravity="right|center_vertical"/>
+</com.duolaguanjia.view.LinearLayoutAutoHintInputMethod>

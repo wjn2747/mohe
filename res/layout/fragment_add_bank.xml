@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duolaguanjia.view.LinearLayoutAutoHintInputMethod xmlns:android="http://schemas.android.com/apk/res/android"
+                                                       xmlns:mohe="http://schemas.android.com/apk/res/com.duolaguanjia"
+                                                       android:orientation="vertical"
+                                                       android:background="@color/whitesmoke"
+                                                       android:layout_width="match_parent"
+                                                       android:layout_height="match_parent">
+    <include layout="@layout/view_title"></include>
+
+    <com.duolaguanjia.view.WidgetInputItem
+            mohe:input_hile="请输入真实姓名"
+            mohe:left_txt="姓名"
+            android:layout_width="fill_parent"
+             android:layout_height="@dimen/item_height"
+            android:layout_marginTop="10dp">
+
+
+    </com.duolaguanjia.view.WidgetInputItem>
+    <com.duolaguanjia.view.WidgetInputItem
+            mohe:input_hile="请输入身份证号"
+            mohe:left_txt="身份证号"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height"
+           >
+
+
+    </com.duolaguanjia.view.WidgetInputItem>
+    <com.duolaguanjia.view.WidgetInputItem
+            mohe:input_hile="输入卡号后智能识别银行卡种"
+            mohe:left_txt="银行卡号"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height"
+           >
+    </com.duolaguanjia.view.WidgetInputItem>
+    <RelativeLayout
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height">
+
+        <TextView android:text="手机号码" android:id="@+id/tv_input_name" android:layout_centerVertical="true" android:textSize="16sp" android:layout_marginLeft="10dp"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black"/>
+
+        <com.duolaguanjia.view.EditTextWithDel android:hint="请输入银行预留的号码" android:id="@+id/et_phone" android:inputType="number" android:textSize="15sp" android:layout_centerVertical="true" android:layout_marginLeft="100dp" android:textColor="@color/hint" android:background="@null" android:layout_width="wrap_content" android:layout_height="40dp" />
+
+       <Button android:layout_centerVertical="true" android:background="@drawable/button_style" android:textColor="@color/white" android:textSize="12sp" android:layout_alignParentRight="true" android:id="@+id/bt_send_code" android:layout_marginRight="10dp" android:layout_width="85dp" android:gravity="center" android:padding="0dp"  android:text="发送验证码" android:layout_height="30dp"/>
+        <View android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+    </RelativeLayout>
+
+
+    <com.duolaguanjia.view.WidgetInputItem
+            mohe:input_hile="输入手机验证码"
+            mohe:left_txt="验证码"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height"
+          >
+    </com.duolaguanjia.view.WidgetInputItem>
+<TextView android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:textSize="@dimen/text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tv_xieyi"/>
+
+    <Button android:layout_marginTop="20dp" android:textSize="18sp" android:text="确定" android:textColor="@color/white" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:background="@drawable/button_style" android:layout_width="fill_parent" android:layout_height="40dp"/>
+</com.duolaguanjia.view.LinearLayoutAutoHintInputMethod>

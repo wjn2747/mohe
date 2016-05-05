@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/border_solid"
+              android:padding="0dp"
+              android:layout_width="fill_parent"
+              android:layout_height="160dp">
+    <LinearLayout     android:padding="0dp" android:layout_width="fill_parent" android:layout_height="30dp" android:background="@drawable/app_color_round">
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="horizontal">
+    <RelativeLayout android:layout_width="0dp" android:layout_height="fill_parent" android:layout_weight="1">
+        <FrameLayout
+                android:id="@+id/imageView1"
+                android:layout_width="60dp"
+                android:layout_marginLeft="44dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                >
+            <ImageView
+                    android:id="@+id/user_item_iv_avatar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bill_item_bg"
+                    android:scaleType="fitXY"/>
+
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/round"
+                    android:duplicateParentState="true"
+                    android:scaleType="fitXY" />
+        </FrameLayout>
+        <TextView android:textSize="12sp" android:gravity="center" android:layout_alignRight="@+id/imageView1" android:layout_alignLeft="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="必胜客" android:textColor="@color/black" android:layout_below="@id/imageView1" />
+
+    </RelativeLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="fill_parent" android:orientation="horizontal">
+            <TextView android:layout_marginTop="5dp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="32sp" android:textColor="@color/app_color" android:text="￥"/>
+            <TextView android:layout_marginTop="5dp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:gravity="top" android:textSize="65sp" android:textColor="@color/app_color" android:text="10"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.duolaguanjia.view.DashedLineView android:layout_width="fill_parent" android:layout_height="1dp"></com.duolaguanjia.view.DashedLineView>
+  <TextView android:layout_width="fill_parent" android:text="2015-9-28至2015-12-30" android:layout_marginRight="20dp" android:gravity="center_vertical|right" android:layout_height="0dp" android:layout_weight="1"  android:textSize="12sp" android:textColor="@color/hint"/>
+</LinearLayout>

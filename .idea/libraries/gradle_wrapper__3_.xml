@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="gradle-wrapper (3)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../lovetuzitong-MultiImageSelector-9ec2240/multi-image-selector/src/main/lib/gradle-wrapper.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../lovetuzitong-MultiImageSelector-9ec2240/multi-image-selector/src/main/lib/picasso-2.5.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

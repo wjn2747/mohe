@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/whitesmoke"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+  <include layout="@layout/view_title"></include>
+    <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35dp" android:background="#09aeb7"
+                    android:id="@+id/rl_address">
+      <TextView  android:visibility="gone" android:layout_centerVertical="true" android:layout_marginLeft="10dp" android:text="  XXX路XX号" android:drawableLeft="@drawable/positioning_white" android:textSize="14sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="修改地址" android:layout_marginRight="25dp" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:textColor="@color/white"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginRight="10dp" android:src="@drawable/arrow_white" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+<LinearLayout  android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+   <LinearLayout android:orientation="horizontal" android:background="@color/whitesmoke" android:layout_width="80dp" android:layout_height="fill_parent">
+       <ListView
+               android:fadingEdge="none"
+               android:cacheColorHint="#00000000"
+               android:minHeight="?android:attr/listPreferredItemHeight" android:listSelector="@android:color/transparent" android:layout_width="0dp" android:layout_weight="1" android:id="@+id/lv_left"  android:scrollbars="none" android:divider="#dddddd" android:dividerHeight="0.5dp"  android:layout_height="fill_parent">
+       </ListView>
+       <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/line_color"></View>
+   </LinearLayout>
+    <LinearLayout android:background="@color/white" android:layout_width="0dp" android:layout_weight="1" android:layout_height="fill_parent">
+      <include layout="@layout/view_xlistview"></include>
+
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

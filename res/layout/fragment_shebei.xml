@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/whitesmoke"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/view_title"></include>
+ <com.duolaguanjia.view.MoHeImageListView android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginTop="5dp" android:id="@+id/mohe_view" android:layout_width="fill_parent" android:layout_height="wrap_content" ></com.duolaguanjia.view.MoHeImageListView>
+    <com.app_sdk.view.SourcePanel  android:verticalSpacing="10dp" android:layout_margin="10dp" android:listSelector="@color/trans"  android:numColumns="3" android:id="@+id/sp_scroll" android:layout_width="fill_parent"
+                                  android:layout_height="wrap_content"></com.app_sdk.view.SourcePanel>
+</LinearLayout>

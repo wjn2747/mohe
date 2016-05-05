@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:id="@+id/rl_border"
+              android:layout_width="110dp"
+              android:layout_height="110dp">
+    <FrameLayout
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+         android:layout_margin="5dp" >
+
+        <ImageView
+                android:id="@+id/rl_border_image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"/>
+
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bglistitem_selector_session_select"
+                android:duplicateParentState="true"
+                android:scaleType="fitXY" />
+    </FrameLayout>
+
+        <ImageView android:layout_margin="5dp" android:id="@+id/iv_yy" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/shape"/>
+        <ImageView android:layout_margin="5dp"  android:visibility="gone" android:id="@+id/iv_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/alread"/>
+        <EditText android:gravity="center"  android:hint="/点击编辑/"  android:textColorHint="@color/white" android:background="@null" android:id="@+id/tv_name" android:minWidth="50dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:textColor="@color/white"  android:textSize="@dimen/txt_middle_"/>
+       <TextView android:visibility="gone" android:gravity="center" android:enabled="false" android:hint="/点击编辑/"  android:textColorHint="@color/white" android:background="@null" android:id="@+id/look_name" android:minWidth="50dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:textColor="@color/white" android:textSize="@dimen/txt_middle_"/>
+<ImageView android:visibility="gone" android:id="@+id/iv_delete" android:layout_width="30dp" android:layout_alignParentRight="true" android:layout_height="30dp" android:src="@drawable/delete"/>
+</RelativeLayout>

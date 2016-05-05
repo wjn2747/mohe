@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:yingmei="http://schemas.android.com/apk/res/com.duolaguanjia"
+              android:orientation="vertical"
+              android:background="@color/whitesmoke"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/view_title"></include>
+    <View android:layout_marginTop="10dp" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/app_line"></View>
+   <include layout="@layout/view_add_bank"></include>
+    <View  android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/app_line"></View>
+
+    <ListView
+            android:fadingEdge="none"
+            android:layout_margin="10dp"
+            android:cacheColorHint="#00000000"
+            android:minHeight="?android:attr/listPreferredItemHeight" android:listSelector="@android:color/transparent" android:layout_width="fill_parent" android:id="@+id/listviw"  android:scrollbars="none" android:divider="@color/trans" android:dividerHeight="10dp"  android:layout_height="fill_parent">
+    </ListView>
+</LinearLayout>

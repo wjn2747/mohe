@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duolaguanjia.view.LinearLayoutAutoHintInputMethod xmlns:android="http://schemas.android.com/apk/res/android"
+                                                       xmlns:mohe="http://schemas.android.com/apk/res/com.duolaguanjia"
+                                                       android:orientation="vertical"
+                                                       android:background="@color/whitesmoke"
+                                                       android:layout_width="match_parent"
+                                                       android:layout_height="fill_parent">
+    <include layout="@layout/view_title"></include>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+            <TextView android:layout_marginTop="10dp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请选择场景" android:textSize="18sp" android:textColor="@color/app_color"/>
+            <LinearLayout    android:id="@+id/ll_guding_style" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="110dp">
+
+            </LinearLayout>
+            <LinearLayout  android:id="@+id/ll_auto_style" android:orientation="horizontal"  android:layout_width="fill_parent" android:layout_height="110dp">
+            </LinearLayout>
+            <com.duolaguanjia.view.WidgetInputItem
+                    android:id="@+id/wi_input_name"
+                    mohe:input_hile="请输入姓名"
+                    android:layout_marginTop="10dp"
+                    mohe:left_txt="姓名"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_height"
+            >
+            </com.duolaguanjia.view.WidgetInputItem>
+            <com.duolaguanjia.view.WidgetInputItem
+                    android:id="@+id/wi_phone"
+                    mohe:input_hile="请输入联系电话"
+                    mohe:left_txt="联系电话"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_height"
+            >
+            </com.duolaguanjia.view.WidgetInputItem>
+            <RelativeLayout
+                    android:background="@color/white"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height" android:id="@+id/rl_sheng">
+                <TextView  android:text="省" android:layout_centerVertical="true" android:textSize="16sp" android:layout_marginLeft="10dp"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black"/>
+                <TextView android:gravity="center_vertical"  android:text="选择省" android:textCursorDrawable="@drawable/color_cursor"  android:id="@+id/tv_sheng" android:textSize="15sp"  android:layout_centerVertical="true" android:layout_marginLeft="100dp"  android:textColor="@color/hint" android:background="@null" android:layout_width="200dp" android:layout_height="40dp" />
+                <View   android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height" android:id="@+id/rl_city">
+                <TextView android:text="市" android:layout_centerVertical="true" android:textSize="16sp" android:layout_marginLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black"
+                />
+                <TextView android:gravity="center_vertical" android:text="选择市" android:textCursorDrawable="@drawable/color_cursor" android:id="@+id/tv_city" android:textSize="15sp" android:layout_centerVertical="true" android:layout_marginLeft="100dp" android:textColor="@color/hint" android:background="@null" android:layout_width="200dp" android:layout_height="40dp" />
+                <View   android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height" android:id="@+id/rl_xian">
+                <TextView  android:text="县/区" android:layout_centerVertical="true" android:textSize="16sp" android:layout_marginLeft="10dp"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black"/>
+                <TextView android:gravity="center_vertical" android:text="选择区" android:textCursorDrawable="@drawable/color_cursor" android:id="@+id/tv_arce" android:textSize="15sp" android:layout_centerVertical="true" android:layout_marginLeft="100dp" android:textColor="@color/hint" android:background="@null" android:layout_width="200dp" android:layout_height="40dp" />
+                <View   android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+            </RelativeLayout>
+            <com.duolaguanjia.view.WidgetInputItem
+                    android:id="@+id/wi_address_descript"
+                    mohe:input_hile="请输入详细地址"
+                    mohe:left_txt="详细地址"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_height"
+            >
+            </com.duolaguanjia.view.WidgetInputItem>
+            <Button android:layout_marginBottom="40dp" android:layout_marginTop="20dp" android:textSize="18sp" android:text="确定" android:textColor="@color/white" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:background="@drawable/button_style" android:layout_width="fill_parent" android:layout_height="40dp"
+                    android:id="@+id/bt_sure"/>
+        </LinearLayout>
+    </ScrollView>
+</com.duolaguanjia.view.LinearLayoutAutoHintInputMethod>

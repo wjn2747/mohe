@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duolaguanjia.view.LinearLayoutAutoHintInputMethod xmlns:android="http://schemas.android.com/apk/res/android"
+                                                       xmlns:mohe="http://schemas.android.com/apk/res/com.duolaguanjia"
+                                                       android:orientation="vertical"
+                                                       android:background="@color/whitesmoke"
+                                                       android:layout_width="match_parent"
+                                                       android:layout_height="match_parent">
+    <include layout="@layout/view_title"></include>
+    <com.duolaguanjia.view.WidgetInputItem
+            mohe:input_hile="请输入您的昵称"
+            mohe:left_txt="昵称"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="10dp" android:id="@+id/wi_input" android:orientation="vertical">
+            </com.duolaguanjia.view.WidgetInputItem>
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height" android:id="@+id/rl_sex">
+        <TextView android:id="@+id/tv_input_name" android:text="性别" android:layout_centerVertical="true" android:textSize="16sp" android:layout_marginLeft="10dp"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black"/>
+        <LinearLayout android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginLeft="70dp">
+         <RadioGroup android:id="@+id/rg_sex" android:layout_width="wrap_content" android:orientation="horizontal" android:layout_height="wrap_content">
+             <RadioButton   android:layout_width="wrap_content"     android:textColor="@color/black" android:layout_height="wrap_content"  android:text="男"
+                            android:checked="false" android:id="@+id/cb_nan"/>
+             <RadioButton    android:layout_width="wrap_content"  android:textColor="@color/black"  android:layout_height="wrap_content" android:text="女"
+                          android:checked="false" android:id="@+id/cb_nv"/>
+         </RadioGroup>
+                 </LinearLayout>
+        <View  android:id="@+id/view_line" android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+    </RelativeLayout>
+    <Button android:layout_marginTop="20dp" android:textSize="18sp" android:text="确定" android:textColor="@color/white" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:background="@drawable/button_style" android:layout_width="fill_parent" android:layout_height="40dp"
+            android:id="@+id/bt_ok"/>
+</com.duolaguanjia.view.LinearLayoutAutoHintInputMethod>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+                android:background="@color/white"
+              android:layout_height="wrap_content">
+    <TextView android:id="@+id/tv_time" android:layout_margin="10dp" android:layout_width="wrap_content" android:text="06:45" android:textSize="34sp"  android:textColor="@color/hint" android:layout_height="wrap_content"/>
+   <TextView  android:id="@+id/tv_day" android:layout_below="@id/tv_time" android:text="每天" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:layout_marginLeft="10dp" android:textColor="@color/black"/>
+
+<TextView  android:visibility="gone" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginBottom="10dp" android:layout_below="@id/tv_day" android:textSize="10sp" android:text="将在10小时28分钟后提醒您" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/hint"
+         />
+
+    <LinearLayout android:layout_centerVertical="true" android:gravity="center" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical"
+                  android:id="@+id/ll_open">
+        <ImageButton android:id="@+id/ib_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/sel_open"/>
+        <TextView  android:singleLine="true" android:visibility="invisible" android:layout_marginTop="5dp"  android:layout_below="@id/tv_day" android:textSize="10sp" android:text="每天08:00自动播放" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/hint"/>
+    </LinearLayout>
+</RelativeLayout>

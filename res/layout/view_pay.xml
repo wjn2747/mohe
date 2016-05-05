@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:yingmei="http://schemas.android.com/apk/res/com.duolaguanjia"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@drawable/border"
+              android:layout_height="match_parent">
+    <TextView android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:textSize="20sp" android:gravity="center" android:text="请选择支付方式" android:textColor="@color/black"/>
+<View android:layout_width="fill_parent" android:layout_marginRight="20dp" android:layout_height="0.5dp" android:background="@color/app_color"></View>
+    <com.duolaguanjia.view.WidgetMenuItem android:layout_width="match_parent"
+                                          android:layout_height="40dp"
+                                          android:tag="ye"
+                                          yingmei:menu_icon="@drawable/yuer"
+                                          yingmei:textcolor="#999999"
+                                          yingmei:menu_title="余额" android:orientation="vertical" android:id="@+id/wm_yue"></com.duolaguanjia.view.WidgetMenuItem>
+    <View android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+    <com.duolaguanjia.view.WidgetMenuItem android:layout_width="match_parent"
+                                          android:layout_height="40dp"
+                                          yingmei:menu_icon="@drawable/zhifu"
+                                          yingmei:textcolor="#999999"
+                                          android:tag="alipay"
+                                          yingmei:menu_title="支付宝" android:orientation="vertical" android:id="@+id/wm_zhifubao"></com.duolaguanjia.view.WidgetMenuItem>
+    <View android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+    <com.duolaguanjia.view.WidgetMenuItem android:layout_width="match_parent"
+                                          android:layout_height="40dp"
+                                          yingmei:menu_icon="@drawable/duola"
+                                          yingmei:textcolor="#999999"
+                                          android:tag="wx"
+                                          yingmei:menu_title="微信" android:orientation="vertical"
+                                          android:id="@+id/wm_duolacz"></com.duolaguanjia.view.WidgetMenuItem>
+    <View android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+    <com.duolaguanjia.view.WidgetMenuItem android:layout_width="match_parent"
+                                          android:layout_height="40dp"
+                                          yingmei:textcolor="#999999"
+                                          android:visibility="gone"
+                                          yingmei:menu_icon="@drawable/duola"
+                                          yingmei:menu_title="交通银行卡  信用卡 (4531)" android:orientation="vertical"
+                                          android:id="@+id/wm_bank"></com.duolaguanjia.view.WidgetMenuItem>
+    <View   android:visibility="gone" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+   <LinearLayout android:visibility="gone" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/item_height">
+       <TextView android:layout_marginLeft="20dp" android:layout_marginRight="10dp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="@dimen/item_height" android:textSize="18sp" android:gravity="center_vertical" android:text="使用新卡支付" android:textColor="@color/black"
+                 android:id="@+id/ll_add_new"/>
+       <ImageView
+               android:id="@+id/widget_menuitem_arrow"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="20dp"
+               android:layout_gravity="center_vertical"
+               android:scaleType="fitCenter"
+               android:src="@drawable/right_arrow" />
+   </LinearLayout>
+</LinearLayout>

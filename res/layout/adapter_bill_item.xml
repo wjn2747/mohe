@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/ll_time_item" android:layout_width="fill_parent" android:layout_height="30dp" android:background="@color/whitesmoke">
+  <TextView android:layout_marginLeft="10dp" android:textSize="15sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black" android:text="本月"
+            android:id="@+id/tv_monetg"/>
+        <View  android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line"> </View>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+
+        <ImageView android:layout_marginLeft="10dp" android:src="@drawable/shou"  android:layout_width="30dp" android:layout_height="30dp" android:id="@+id/iv_icon"/>
+
+
+        <TextView android:layout_marginLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="10dp" android:textColor="@color/red" android:textSize="18sp"
+                  android:id="@+id/tv_price"/>
+        <TextView android:gravity="center" android:id="@+id/tv_order_name" android:textSize="16sp" android:layout_marginLeft="5dp"  android:layout_alignTop="@id/imageView1" android:textColor="@color/black" android:text="肯德基"  android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+
+        <TextView  android:layout_marginRight="10dp" android:id="@+id/tv_time"  android:textSize="@dimen/text_size" android:layout_marginLeft="5dp"  android:textColor="@color/hint" android:text="2015-09-09  12:00" android:layout_toRightOf="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

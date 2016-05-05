@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:yingmei="http://schemas.android.com/apk/res/com.duolaguanjia"
+                  android:orientation="vertical"
+                  android:background="@color/whitesmoke"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_home_title"  android:background="@color/title_bg" android:layout_width="fill_parent" android:layout_height="40dp" android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:text="我的" android:layout_centerVertical="true" android:layout_marginLeft="10dp" android:textSize="20dp" android:layout_height="wrap_content" android:textColor="@color/white"
+                  android:id="@+id/tv_left_txt"/>
+
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="100dp" android:background="@color/main_top_color"
+                    android:id="@+id/rl_user_setting">
+        <FrameLayout
+                android:id="@+id/imageView1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+        >
+            <ImageView
+                    android:id="@+id/user_item_iv_avatar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/user_face"
+                    android:scaleType="fitXY"/>
+
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/round_blue"
+                    android:duplicateParentState="true"
+                    android:scaleType="fitXY" android:id="@+id/iv_face"/>
+        </FrameLayout>
+        <LinearLayout android:layout_toRightOf="@id/imageView1" android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:orientation="vertical">
+            <TextView android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/white" android:textSize="18sp"/>
+            <TextView android:id="@+id/tv_phone" android:text="13506749339" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/white" android:textSize="15sp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_alignParentRight="true"  android:layout_margin="10dp" android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:textColor="@color/white"
+                      android:id="@+id/tv_yue"/>
+            <TextView android:layout_width="wrap_content" android:text="余额(元)"  android:layout_height="wrap_content" android:textSize="12sp" android:textColor="@color/white"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+            <!--功能列表-->
+            <com.duolaguanjia.view.WidgetMenuItem android:layout_width="match_parent"
+                                                  android:layout_height="@dimen/item_height"
+                                                  android:layout_marginTop="10dp"
+                                                  yingmei:menu_icon="@drawable/payment"
+                                                  yingmei:textcolor="#333333"
+                                                  android:visibility="gone"
+                                                  yingmei:menu_title="支付设置" android:id="@+id/widgt_pay_set" android:orientation="vertical"></com.duolaguanjia.view.WidgetMenuItem>
+            <View    android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+            <com.duolaguanjia.view.WidgetMenuItem yingmei:menu_icon="@drawable/lock" yingmei:textcolor="#333333"
+                                                  android:layout_marginTop="10dp"
+                                                  yingmei:menu_title="账户安全" android:id="@+id/widgt_account_anquan" android:layout_width="fill_parent"
+                                                  android:layout_height="@dimen/item_height" android:orientation="vertical"></com.duolaguanjia.view.WidgetMenuItem>
+            <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+
+            <com.duolaguanjia.view.WidgetMenuItem yingmei:textcolor="#333333"
+                                                  yingmei:menu_icon="@drawable/credit"
+                                                  android:visibility="gone"
+                                                  yingmei:menu_title="芝麻信用" android:id="@+id/widgt_zhima_xinyong" android:layout_width="fill_parent"
+                                                  android:layout_height="@dimen/item_height" ></com.duolaguanjia.view.WidgetMenuItem>
+            <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+
+            <com.duolaguanjia.view.WidgetMenuItem android:layout_width="fill_parent"
+                                                  yingmei:menu_icon="@drawable/address"
+                                                  android:layout_marginTop="10dp"
+                                                  yingmei:textcolor="#333333"
+                                                  yingmei:menu_title="地址" android:id="@+id/widgt_address"
+                                                  android:layout_height="@dimen/item_height" ></com.duolaguanjia.view.WidgetMenuItem>
+            <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+            <com.duolaguanjia.view.WidgetMenuItem yingmei:textcolor="#333333"
+                                                  yingmei:menu_icon="@drawable/link_icon"
+                                                  android:layout_marginTop="10dp"
+                                                  yingmei:menu_title="绑定魔盒" android:id="@+id/widgt_bing" android:layout_width="fill_parent"
+                                                  android:layout_height="@dimen/item_height" ></com.duolaguanjia.view.WidgetMenuItem>
+            <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+            <com.duolaguanjia.view.WidgetMenuItem android:layout_width="match_parent"
+                                                  android:layout_height="@dimen/item_height"
+
+                                                  yingmei:menu_icon="@drawable/wifi"
+                                                  yingmei:textcolor="#333333"
+                                                  yingmei:menu_title="魔盒连接wifi" android:id="@+id/widgt_wifi" android:orientation="vertical"></com.duolaguanjia.view.WidgetMenuItem>
+            <View   android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+
+            <com.duolaguanjia.view.WidgetMenuItem android:layout_marginTop="10dp" yingmei:textcolor="#333333"
+                                                  yingmei:menu_icon="@drawable/key"
+                                                  yingmei:menu_title="挂失" android:id="@+id/widgt_over" android:layout_width="fill_parent"
+                                                  android:layout_height="@dimen/item_height"></com.duolaguanjia.view.WidgetMenuItem>
+            <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+            <com.duolaguanjia.view.WidgetMenuItem yingmei:textcolor="#333333"
+                                                  yingmei:menu_icon="@drawable/maintenance"
+                                                  yingmei:menu_title="维修" android:id="@+id/widgt_weixiu" android:layout_width="fill_parent"
+                                                  android:layout_height="@dimen/item_height"></com.duolaguanjia.view.WidgetMenuItem>
+            <View    android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+            <com.duolaguanjia.view.WidgetMenuItem yingmei:textcolor="#333333"
+                                                  yingmei:menu_icon="@drawable/about"
+                                                  android:layout_marginTop="10dp"
+                                                  yingmei:menu_title="关于" android:id="@+id/widgt_about" android:layout_width="fill_parent"
+                                                  android:layout_height="@dimen/item_height"></com.duolaguanjia.view.WidgetMenuItem>
+            <View   android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+            <com.duolaguanjia.view.WidgetMenuItem android:layout_marginBottom="100dp" yingmei:textcolor="#333333"
+                                                  yingmei:menu_icon="@drawable/help"
+                                                  yingmei:menu_title="帮助" android:id="@+id/widgt_help" android:layout_width="fill_parent"
+                                                  android:layout_height="@dimen/item_height"></com.duolaguanjia.view.WidgetMenuItem>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

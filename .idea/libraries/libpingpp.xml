@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="libpingpp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/libpingpp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/UPPayAssistEx.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

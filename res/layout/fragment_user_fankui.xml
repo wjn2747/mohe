@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duolaguanjia.view.LinearLayoutAutoHintInputMethod xmlns:android="http://schemas.android.com/apk/res/android"
+                                                       android:orientation="vertical"
+                                                       android:background="@color/whitesmoke"
+                                                       android:layout_width="match_parent"
+                                                       android:layout_height="match_parent">
+    <include layout="@layout/view_title"></include>
+    <EditText android:textCursorDrawable="@drawable/color_cursor" android:gravity="top" android:id="@+id/et_content"  android:hint="请在此处留下您宝贵的意见" android:background="@drawable/border_solid" android:layout_width="fill_parent" android:layout_height="200dp" android:layout_margin="10dp"/>
+    <LinearLayout android:layout_margin="10dp"  android:id="@+id/ll_auto_style" android:orientation="horizontal"  android:layout_width="fill_parent" android:layout_height="110dp">
+
+
+    </LinearLayout>
+      <Button android:textSize="18sp" android:text="确定" android:textColor="@color/white" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:background="@drawable/button_style" android:layout_width="fill_parent" android:layout_height="40dp"
+              android:id="@+id/bt_ok"/>
+</com.duolaguanjia.view.LinearLayoutAutoHintInputMethod>

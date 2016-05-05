@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:paddingTop="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <GridView android:listSelector="@null"  android:numColumns="4" android:id="@+id/sp_scroll" android:layout_width="fill_parent"
+                                  android:layout_height="160dp"></GridView>
+    <View android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+    <ListView
+            android:fadingEdge="none"
+            android:layout_marginLeft="10dp"
+            android:cacheColorHint="#00000000"
+            android:minHeight="?android:attr/listPreferredItemHeight" android:listSelector="@android:color/transparent" android:layout_width="fill_parent" android:id="@+id/listviw"  android:scrollbars="none" android:divider="@color/line" android:dividerHeight="0.5dp"  android:layout_height="wrap_content">
+    </ListView>
+    <View   android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+    <View   android:layout_width="fill_parent" android:layout_height="10dp" android:background="@color/whitesmoke"></View>
+</LinearLayout>

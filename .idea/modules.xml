@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../app_sdk/app_sdk.iml" filepath="$PROJECT_DIR$/../app_sdk/app_sdk.iml" />
+      <module fileurl="file://E:/潘多拉/潘多拉/app_sdk/app_sdk.iml" filepath="E:/潘多拉/潘多拉/app_sdk/app_sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lovetuzitong-MultiImageSelector-9ec2240/multi-image-selector/src/main/main.iml" filepath="$PROJECT_DIR$/../lovetuzitong-MultiImageSelector-9ec2240/multi-image-selector/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mohe.iml" filepath="$PROJECT_DIR$/mohe.iml" />
+    </modules>
+  </component>
+</project>

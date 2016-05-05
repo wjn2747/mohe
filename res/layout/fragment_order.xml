@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/view_title"></include>
+    <RelativeLayout android:id="@+id/rl_all_order"  android:layout_width="fill_parent" android:layout_height="40dp" android:background="@color/main_top_color">
+        <TextView android:layout_centerVertical="true" android:textColor="@color/white" android:gravity="center" android:text="全部订单" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="@dimen/txt_middle"/>
+    <ImageView android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:background="@drawable/arrow_white"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_weight="0"
+            android:background="@color/main_top_color"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+        <View android:layout_height="0.1dp" android:layout_width="fill_parent" android:background="@color/line"/>
+        <com.duolaguanjia.view.IndicatorHorizontalScrollView
+                android:id="@+id/hsv"
+                android:layout_width="fill_parent"
+                android:layout_centerInParent="true"
+                android:layout_height="30dp"
+                android:padding="0dp"
+                android:scrollbars="@null"
+              >
+        </com.duolaguanjia.view.IndicatorHorizontalScrollView>
+
+        <ImageView
+                android:id="@+id/iv_scroll"
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="left"
+                android:background="#7fFFFFFF" />
+    </RelativeLayout>
+    <com.duolaguanjia.view.CustomViewPager
+            android:id="@+id/viewpage"
+            android:layout_below="@id/rl_top"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+    </com.duolaguanjia.view.CustomViewPager>
+
+</LinearLayout>

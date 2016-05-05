@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SnakeLayout">
+        <attr name="selectImg" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="wheel">
+        <attr name="lineSplitHeight" format="reference|integer" />
+        <attr name="textColorFirst" format="reference|color" />
+        <attr name="textColorSecond" format="reference|color" />
+        <attr name="textColorThird" format="reference|color" />
+        <attr name="splitLineColor" format="reference|color" />
+        <attr name="textSize" format="reference|integer" />
+        <attr name="textGravity">
+            <flag name="left" value="-1" />
+            <flag name="center" value="0" />
+            <flag name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+    <declare-styleable name="MenuView">
+        <attr name="menu_icon_type" format="string" />
+        <attr name="menu_title" format="string" />
+        <attr name="righttxt" format="string"></attr>
+        <attr name="hidettxt" format="string"></attr>
+        <attr name="menu_icon" format="reference" />
+        <attr name="textcolor" format="color" />
+        <attr name="checkable" format="boolean" />
+        <attr name="righticon" format="reference" />
+        <attr name="isedit" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="InputView">
+        <attr name="menu_txt" format="string" />
+        <attr name="input_hile" format="string" />
+        <attr name="right_txt" format="string" />
+        <attr name="left_txt" format="string" />
+        <attr name="left_icon"   format="reference" ></attr>
+        <attr name="isline" format="boolean" />
+        <attr name="enable" format="boolean" />
+        <attr name="hile_color" format="color"></attr>
+    </declare-styleable>
+
+</resources>

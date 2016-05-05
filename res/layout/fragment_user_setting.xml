@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:yingmei="http://schemas.android.com/apk/res/com.duolaguanjia"
+              android:orientation="vertical"
+              android:background="@color/whitesmoke"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/view_title"></include>
+    <RelativeLayout android:layout_width="fill_parent" android:background="@color/white" android:layout_height="95dp"
+                    android:id="@+id/rl_face">
+        <TextView
+                android:id="@+id/tv_toux"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="头像"
+                android:textColor="#333333"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp" />
+
+        <FrameLayout
+                android:id="@+id/imageView1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+        >
+            <ImageView
+                    android:id="@+id/user_item_iv_avatar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/user_face"
+                    android:scaleType="fitXY"/>
+
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/round"
+                    android:duplicateParentState="true"
+                    android:scaleType="fitXY" android:id="@+id/iv_face"/>
+        </FrameLayout>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/right_arrow" />
+    </RelativeLayout>
+    <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+
+    <View  android:layout_width="fill_parent" android:layout_marginTop="10dp" android:layout_height="0.1dp" android:background="@color/line"></View>
+    <com.duolaguanjia.view.WidgetMenuItem android:id="@+id/wm_account_name" yingmei:textcolor="#333333"
+                                          yingmei:checkable="true"
+                                          yingmei:menu_title="账户名" android:layout_width="fill_parent"
+                                          android:layout_height="@dimen/item_height" android:orientation="vertical"></com.duolaguanjia.view.WidgetMenuItem>
+    <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+    <com.duolaguanjia.view.WidgetMenuItem yingmei:textcolor="#333333"
+
+                                          yingmei:menu_title="昵称" android:layout_width="fill_parent"
+                                          android:layout_height="@dimen/item_height" android:id="@+id/wm_accont"
+                                          android:orientation="vertical"></com.duolaguanjia.view.WidgetMenuItem>
+    <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+    <com.duolaguanjia.view.WidgetMenuItem yingmei:textcolor="#333333"
+
+                                          yingmei:menu_title="性别" android:layout_width="fill_parent"
+                                          android:layout_height="@dimen/item_height" android:id="@+id/wm_sex"></com.duolaguanjia.view.WidgetMenuItem>
+    <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+    <com.duolaguanjia.view.WidgetMenuItem yingmei:textcolor="#333333"
+
+                                          yingmei:menu_title="行业" android:layout_width="fill_parent"
+                                          android:layout_height="@dimen/item_height" android:id="@+id/wm_hangye"></com.duolaguanjia.view.WidgetMenuItem>
+    <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+    <com.duolaguanjia.view.WidgetMenuItem yingmei:textcolor="#333333"
+
+                                          yingmei:menu_title="职业" android:layout_width="fill_parent"
+                                          android:layout_height="@dimen/item_height" android:id="@+id/wm_zhiye"></com.duolaguanjia.view.WidgetMenuItem>
+    <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/line"></View>
+    <Button android:layout_marginTop="20dp" android:textSize="18sp" android:text="保存" android:textColor="@color/white" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:background="@drawable/button_style" android:layout_width="fill_parent" android:layout_height="40dp"
+            android:id="@+id/bt_save"/>
+</LinearLayout>

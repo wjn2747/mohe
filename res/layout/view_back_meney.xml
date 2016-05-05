@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="90dp">
+      <TextView android:layout_marginLeft="10dp" android:layout_alignParentBottom="true" android:id="@+id/tv_back_txt"   android:layout_marginTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退款申请已提交" android:textColor="@color/hint"/>
+    <ImageView android:id="@+id/iv_back_submit" android:layout_centerVertical="true" android:layout_above="@id/tv_back_txt" android:layout_alignLeft="@id/tv_back_txt" android:layout_alignRight="@id/tv_back_txt"  android:layout_width="100dp" android:layout_height="60dp" android:src="@drawable/apply"/>
+    <TextView  android:layout_centerHorizontal="true" android:layout_alignParentBottom="true" android:id="@+id/tv_kefu_txt"   android:layout_marginTop="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:text="客服正在处理中" android:textColor="@color/hint"/>
+    <ImageView android:id="@+id/iv_back_kefu" android:layout_centerInParent="true" android:layout_above="@id/tv_kefu_txt" android:layout_alignLeft="@id/tv_kefu_txt" android:layout_alignRight="@id/tv_kefu_txt"  android:layout_width="100dp" android:layout_height="60dp" android:src="@drawable/customer_service_pre"/>
+    <View android:layout_marginTop="28dp" android:layout_toRightOf="@id/iv_back_submit" android:layout_alignTop="@id/iv_back_kefu" android:layout_toLeftOf="@id/iv_back_kefu" android:layout_marginRight="-10dp" android:layout_marginLeft="-10dp"  android:layout_width="wrap_content" android:layout_height="3dp" android:background="#ECB033"
+          android:id="@+id/v_left_line"> </View>
+    <TextView android:layout_alignParentRight="true"  android:layout_centerHorizontal="true" android:layout_alignParentBottom="true" android:id="@+id/tv_back_success" android:gravity="center"  android:layout_marginTop="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:text="退款成功" android:textColor="@color/hint"/>
+    <ImageView android:id="@+id/iv_back_success" android:layout_width="100dp" android:layout_height="60dp" android:src="@drawable/complete_pre"
+               android:layout_above="@+id/tv_back_success" android:layout_alignLeft="@id/tv_back_success" android:layout_alignRight="@id/tv_back_success" android:layout_alignParentEnd="true"/>
+    <View android:layout_marginTop="28dp" android:layout_toRightOf="@id/iv_back_kefu" android:layout_alignTop="@id/iv_back_kefu" android:layout_toLeftOf="@id/tv_back_success" android:layout_marginRight="-10dp" android:layout_marginLeft="-10dp"  android:layout_width="wrap_content" android:layout_height="3dp" android:background="@color/hint"
+          android:id="@+id/v_line_right"> </View>
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.duolaguanjia"
+          android:versionCode="4"
+          android:versionName="1.4"
+
+
+>
+    <uses-sdk android:minSdkVersion="12"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 控制振动器 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 防止设备休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 控制振动器 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 防止设备休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--android:theme="@style/horizontal_slide"-->
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <application android:name=".base.AppApplication" android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+        <activity  android:name=".activity.SplashActivity"
+
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.BranhActivity"></activity>
+        <activity android:name=".activity.OrderActivity"></activity>
+        <activity android:name=".activity.BindMoheActivity"></activity>
+        <activity
+                android:configChanges="orientation|screenSize"
+                android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity" />
+        <activity
+                android:name=".activity.CaptureActivity"
+                android:configChanges="orientation|keyboardHidden"
+                android:screenOrientation="portrait" >
+        </activity>
+        <activity       android:configChanges="orientation|screenSize" android:name=".activity.PreferentialActivity" ></activity>
+        <activity    android:configChanges="orientation|screenSize"  android:name=".activity.ShangJiaActivity"></activity>
+        <activity android:name=".activity.ListItemActivity"    android:configChanges="orientation|screenSize" ></activity>
+        <activity android:name=".activity.ShangJiaDescriptActivity"   android:configChanges="orientation|screenSize" ></activity>
+        <activity android:name=".activity.ListViewSelectActivity"   android:configChanges="orientation|screenSize"></activity>
+        <activity android:name=".activity.DingYueSettingActivity"  android:configChanges="orientation|screenSize" android:launchMode="singleTask" ></activity>
+  <activity android:name=".activity.LoginActivity"  android:configChanges="orientation|screenSize" ></activity>
+   <activity  android:launchMode="singleTask" android:name=".activity.MainActivity" android:configChanges="orientation|screenSize" ></activity>
+
+        <activity
+                android:name=".activity.ProcessWebViewActivity"
+                android:process=":com.duolaguanjia.subproess"
+                android:theme="@style/activityTheme" >
+            <intent-filter>
+                <action android:name="com.duolaguanjia.activity.ProcessWebViewActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.duolaguanjia.activity.ProcessWebViewActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Ping++ SDK 注册 -->
+        <activity
+                android:name="com.pingplusplus.android.PaymentActivity"
+                android:launchMode="singleTop"
+                android:configChanges="orientation|screenSize"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信支付注册 -->
+        <activity-alias
+                android:name=".wxapi.WXPayEntryActivity"
+                android:exported="true"
+                android:targetActivity="com.pingplusplus.android.PaymentActivity" />
+        <!-- 支付宝注册 -->
+        <activity
+                android:name="com.alipay.sdk.app.H5PayActivity"
+                android:configChanges="orientation|keyboardHidden|navigation"
+                android:exported="false"
+                android:screenOrientation="behind" />
+        <activity
+                android:name="com.alipay.sdk.auth.AuthActivity"
+                android:configChanges="orientation|keyboardHidden|navigation"
+                android:exported="false"
+                android:screenOrientation="behind" />
+        <service
+                android:name="com.umeng.update.net.DownloadingService"
+                android:process=":DownloadingService" >
+        </service>
+        <activity
+                android:name="com.umeng.update.UpdateDialogActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <service android:name=".server.WifiServer"></service>
+        <receiver
+                android:name=".wxapi.AppRegister"
+                android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+
+        <meta-data android:value="56cd6ce567e58e0aba0002ae" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="qudao" android:name="UMENG_CHANNEL"/>
+    </application>
+</manifest>

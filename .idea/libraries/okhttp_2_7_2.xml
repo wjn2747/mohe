@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="okhttp-2.7.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../潘多拉/潘多拉/app_sdk/libs/okhttp-2.7.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../潘多拉/潘多拉/app_sdk/libs/okio-1.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

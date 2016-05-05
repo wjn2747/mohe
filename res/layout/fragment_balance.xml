@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duolaguanjia.view.LinearLayoutAutoHintInputMethod xmlns:android="http://schemas.android.com/apk/res/android"
+                                                       android:orientation="vertical"
+                                                       android:background="@color/whitesmoke"
+                                                       android:layout_width="match_parent"
+                                                       android:layout_height="match_parent">
+    <include layout="@layout/view_title"></include>
+    <TextView android:id="@+id/tv_no_bank" android:gravity="center" android:textSize="16sp" android:textColor="@color/white" android:text="绑定银行卡后,解冻余额将分期返充至绑定账户" android:background="#4acfd6" android:layout_width="fill_parent" android:layout_height="127dp">
+    </TextView>
+    <RelativeLayout android:visibility="gone"  android:orientation="vertical" android:id="@+id/tv_bank" android:textSize="16sp" android:textColor="@color/white"  android:background="#4acfd6" android:layout_width="fill_parent" android:layout_height="127dp">
+   <TextView  android:textColor="@color/white" android:id="@+id/tv_zhanghuyue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账户余额 (元)" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:textSize="18sp"/>
+        <TextView  android:layout_alignParentBottom="true"  android:textColor="@color/white" android:id="@+id/tv_y" android:layout_width="wrap_content" android:layout_height="40dp" android:text="￥"  android:layout_marginLeft="50dp"  android:layout_marginBottom="18dp" android:textSize="30sp"/>
+<TextView android:id="@+id/tv_meney"  android:layout_toRightOf="@id/tv_y"  android:layout_below="@id/tv_zhanghuyue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-15dp" android:gravity="top"  android:textColor="@color/white" android:textSize="72sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height">
+        <TextView android:id="@+id/tv_use_yue" android:layout_centerVertical="true" android:textSize="16sp" android:layout_marginLeft="20dp" android:text="可用余额:"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black"/>
+        <TextView android:layout_toRightOf="@id/tv_use_yue" android:text="￥0.00"  android:id="@+id/et_keyong" android:textSize="16sp"  android:layout_centerVertical="true"   android:textColor="@color/hint" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+       <Button android:visibility="gone"  android:layout_centerVertical="true" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:id="@+id/bt_chongzhi" android:text="充值" android:textColor="@color/white" android:layout_width="60dp" android:layout_height="25dp" android:background="@drawable/button_style"/>
+        <View android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height">
+        <TextView android:id="@+id/tv_dongjie_name" android:layout_centerVertical="true" android:textSize="16sp" android:layout_marginLeft="20dp" android:text="冻结余额:"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black"/>
+        <TextView android:layout_toRightOf="@id/tv_dongjie_name" android:text="￥0.00"  android:id="@+id/et_dongjie" android:textSize="16sp"  android:layout_centerVertical="true"   android:textColor="@color/hint" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+    </RelativeLayout>
+
+    <View android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line"></View>
+    <include layout="@layout/view_add_bank" ></include>
+    <View android:visibility="gone"  android:layout_marginBottom="10dp" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line"></View>
+
+    <include layout="@layout/view_listview"></include>
+</com.duolaguanjia.view.LinearLayoutAutoHintInputMethod>

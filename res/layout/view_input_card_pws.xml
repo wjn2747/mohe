@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:mohe="http://schemas.android.com/apk/res/com.duolaguanjia"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@drawable/border"
+              android:layout_height="match_parent">
+    <TextView android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:textSize="20sp" android:gravity="center" android:text="请输入卡号密码" android:textColor="@color/black"/>
+<View android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/app_color"></View>
+    <com.duolaguanjia.view.WidgetInputItem android:layout_width="match_parent"
+                                           mohe:input_hile="请输入充值卡卡号"
+                                           mohe:left_txt="卡号"
+                                           android:layout_marginLeft="10dp"
+                                           android:layout_marginRight="10dp"
+                                           mohe:menu_icon="@drawable/duola"
+                                           android:layout_height="40dp"
+                                           android:orientation="vertical" android:id="@+id/wm_card"></com.duolaguanjia.view.WidgetInputItem>
+
+    <com.duolaguanjia.view.WidgetInputItem android:layout_width="match_parent"
+                                           mohe:input_hile="请输入充值卡密码"
+                                           mohe:left_txt="密码"
+                                           android:layout_marginLeft="10dp"
+                                           android:layout_marginRight="10dp"
+                                           mohe:isline="false"
+                                           mohe:menu_icon="@drawable/duola"
+                                           android:layout_height="40dp"
+                                           android:orientation="vertical" android:id="@+id/wm_pws"></com.duolaguanjia.view.WidgetInputItem>
+</LinearLayout>

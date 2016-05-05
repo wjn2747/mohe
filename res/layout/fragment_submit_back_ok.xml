@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:mohe="http://schemas.android.com/apk/res/com.duolaguanjia"
+              android:orientation="vertical"
+              android:background="@color/whitesmoke"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/view_title"></include>
+    <com.duolaguanjia.view.WidgetInputItem
+            mohe:input_hile="与卖家秒不符"
+            mohe:left_txt="退款原因"
+            mohe:enable="false"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="10dp" android:id="@+id/wi_yuanyin"></com.duolaguanjia.view.WidgetInputItem>
+    <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <com.duolaguanjia.view.WidgetInputItem
+                mohe:input_hile="50元"
+                mohe:left_txt="退款金额"
+                android:layout_width="0dp"
+                mohe:enable="false"
+                mohe:isline="false"
+                android:layout_weight="1"
+                android:layout_height="@dimen/item_height"
+                android:id="@+id/wi_moey">
+        </com.duolaguanjia.view.WidgetInputItem>
+    </LinearLayout>
+    <View  android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+    <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <com.duolaguanjia.view.WidgetInputItem
+                mohe:input_hile="与详情描述一点不相符"
+                mohe:left_txt="退款说明"
+                android:id="@+id/wi_back_meney"
+                mohe:isline="false"
+                mohe:enable="false"
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/item_height"
+        >
+        </com.duolaguanjia.view.WidgetInputItem>
+    </LinearLayout>
+    <View android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@color/line_color"></View>
+<LinearLayout android:layout_marginTop="10dp" android:layout_width="fill_parent" android:background="@color/white" android:layout_height="wrap_content" android:orientation="vertical">
+    <TextView android:layout_marginTop="10dp" android:id="@+id/tv_input_name" android:text="退款进程" android:layout_centerVertical="true" android:textSize="16sp" android:layout_marginLeft="10dp"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black"/>
+   <com.duolaguanjia.view.BackMoneyLoding android:layout_marginBottom="10dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                                          android:id="@+id/back_view">
+
+   </com.duolaguanjia.view.BackMoneyLoding>
+</LinearLayout>
+    <Button android:textSize="16sp" android:text="取消退款" android:textColor="@color/white" android:layout_margin="20dp" android:background="@drawable/button_style" android:layout_width="fill_parent" android:layout_height="40dp"
+            android:id="@+id/bt_next"/>
+</LinearLayout>
